@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, height=device-height, minimum-scale=1.0, initial-scale=1.0, user-scalable=0" name="viewport">
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="src/css/styles.css">
+
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div id="calculator-area">
+            <div id="display">
+                <div id="result">0</div>
+            </div>
+
+            <!-- controls -->
+            <div id="clear" class="control button"><p>clear</p></div>
+            <div id="equals" class="control button"><p>=</p></div>
+
+            <!-- digits -->
+            <div id="digits">
+                <div id="seven" class="digit button"><p>7</p></div>
+                <div id="eight" class="digit button"><p>8</p></div>
+                <div id="nine" class="digit button"><p>9</p></div>
+                <div id="four" class="digit button"><p>4</p></div>
+                <div id="five" class="digit button"><p>5</p></div>
+                <div id="six" class="digit button"><p>6</p></div>
+                <div id="one" class="digit button"><p>1</p></div>
+                <div id="two" class="digit button"><p>2</p></div>
+                <div id="three" class="digit button"><p>3</p></div>
+                <div id="zero" class="digit button"><p>0</p></div>
+                <div id="decimal" class="digit button"><p>.</p></div>
+            </div>
+        
+            <!-- operators -->
+            <div id="add" class="operator button"><p>+</p></div>
+            <div id="subtract" class="operator button"><p>-</p></div>
+            <div id="multiply" class="operator button"><p>x</p></div>
+            <div id="divide" class="operator button"><p>÷</p></div>
+        </div>
+
+        <script src="src/js/interact.js"></script>
+        <script src="src/js/reposition_calculator.js"></script>
+        <script src="src/js/calculator_operations.js"></script>
+        <script src="src/js/app.js"></script>
+    </body>
+</html>
