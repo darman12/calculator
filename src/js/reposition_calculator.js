@@ -1,4 +1,3 @@
-console.log(calculatorArea = document.getElementById("calculator-area"));
+//console.log(calculatorArea = document.getElementById("calculator-area"));
 
-calculatorArea.setAttribute("background-color", "red");
-console.log("hello");
+//console.log(calculatorArea.marginTop);

@@ -4,8 +4,11 @@
         <meta charset="UTF-8">
         <meta content="width=device-width, height=device-height, minimum-scale=1.0, initial-scale=1.0, user-scalable=0" name="viewport">
 
-        <!-- fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <!-- web fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito|Ubuntu" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
 
         <!-- stylesheets -->
         <link rel="stylesheet" href="src/css/styles.css">
@@ -14,9 +17,7 @@
     </head>
     <body>
         <div id="calculator-area">
-            <div id="display">
-                <div id="result">0</div>
-            </div>
+            <div id="display"><div id="result">0</div></div>
 
             <!-- controls -->
             <div id="clear" class="control button"><p>clear</p></div>
@@ -44,9 +45,13 @@
             <div id="divide" class="operator button"><p>÷</p></div>
         </div>
 
+        <script src="src/js/calculator_operations.js"></script>
         <script src="src/js/interact.js"></script>
         <script src="src/js/reposition_calculator.js"></script>
-        <script src="src/js/calculator_operations.js"></script>
         <script src="src/js/app.js"></script>
+
+        <footer>              
+            <p id="attribution">Created w/<i class="fas fa-heart" id="heart"></i> by Spencer Freebairn <a href="https://github.com/darman12/calculator" target="blank"><img id="github-logo" src="src/assets//GitHub-Mark-Light-32px.png" alt="GitHub logo white"></a></p>
+        </footer>
     </body>
 </html>

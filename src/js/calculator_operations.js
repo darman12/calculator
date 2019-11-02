@@ -24,6 +24,7 @@ var CalculatorOperations = (function () {
     /******** public functions *********/
     function operate(operands, operator) {
         if (!validNumber(operands[0]) || !validNumber(operands[1])) {
+            console.log(`operate::\nOperand 1: ${operands[0]}\nOperand 2: ${operands[1]}`);
             return "Error: invalid number";
         }
 
@@ -48,8 +49,8 @@ var CalculatorOperations = (function () {
 }());
 
 /* Tests
-*/
 console.log(CalculatorOperations.operate([2, 7], "+"));
 console.log(CalculatorOperations.operate([2, 7], "-"));
 console.log(CalculatorOperations.operate([2, 7], "*"));
 console.log(CalculatorOperations.operate([2, 7], "/"));
+*/
