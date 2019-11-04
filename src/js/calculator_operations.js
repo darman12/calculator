@@ -16,6 +16,10 @@ var CalculatorOperations = (function () {
         return n1 / n2;
     }
 
+    function raiseToPowerOf(n1, n2) {
+        return n1 ** n2;
+    }
+
     function validNumber(num) {
         return !isNaN(num);
     }
@@ -37,6 +41,8 @@ var CalculatorOperations = (function () {
                 return multiply(operands[0], operands[1]);
             case "/":
                 return divide(operands[0], operands[1]);
+            case "**":
+                return raiseToPowerOf(operands[0], operands[1]);
             default:
                 return "Error: invalid operator";
         }
