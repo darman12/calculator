@@ -76,7 +76,6 @@ buttons.forEach((button) => {
 		input = (input == "x") ? "*" :
 				  (input == "÷") ? "/" : 
 				   input;
-		
 		handleInput(input);
 	});
 });
