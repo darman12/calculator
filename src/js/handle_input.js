@@ -67,7 +67,6 @@ function isOperator(input) {
 		 }
 }
 
-
 let buttons = document.querySelectorAll(".button");
 
 buttons.forEach((button) => {
