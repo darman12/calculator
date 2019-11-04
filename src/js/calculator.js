@@ -3,23 +3,25 @@
  * 
  * Getters return operands as type number, and operator as type string.
  * 
- * Setters will accepts operands as type number or string but only string for
+ * Setters accept operands as type number or string but only string for
  * the operator.
  */
 
 var Calculator = (function() {
 /******** private funcitons and properties *********/
-    let leftOperand = 0;
-    let rightOperand = 0;
+    let leftOperand = null;
+    let rightOperand = null;
     let operator = '';
 
     // this function allows flexibility in the use of this "class". User can
-    //  send values as string or number without having to worry about it
+    //  send values as string or number without having to worry about it.
     function validateNumber(num) {
         if (typeof num == "number") {
             return num;
         } else if (typeof num == "string") {
             return Number(num);
+        } else if (num == null) {
+            return null;
         } else {
             return 0;
         }
@@ -30,19 +32,19 @@ var Calculator = (function() {
     // getters
     function getLeftOperand() { return leftOperand; }
     function getRightOperand() { return rightOperand; }
-    function getOperator() { return this.operator; }
+    function getOperator() { return operator; }
 
     // setters
     function setLeftOperand(num) { leftOperand = validateNumber(num); }
     function setRightOperand(num) { rightOperand = validateNumber(num); }
-    function setOperator(operator) {
-        if (operator == "+" ||
-            operator == "-" ||
-            operator == "*" ||
-            operator == "/" ||
-            operator == "**") {
+    function setOperator(operatorInput) {
+        if (operatorInput == "+" ||
+            operatorInput == "-" ||
+            operatorInput == "*" ||
+            operatorInput == "/" ||
+            operatorInput == "**") {
 
-            this.operator = operator;
+            operator = operatorInput;
 
         } else {
             operator = '';
