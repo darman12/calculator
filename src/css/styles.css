@@ -117,10 +117,11 @@ footer > p {
     text-align: center;
     font-size: 1.6rem;
     color: white;
+
+    line-height: 42px;
 }
 
 #attribution {
-    padding: .8rem;
     background-image: linear-gradient(to right, #44c2fc, #af44fc);
 
     color: white;
